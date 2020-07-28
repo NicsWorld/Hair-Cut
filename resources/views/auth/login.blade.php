@@ -64,6 +64,7 @@
                                 @endif
                             </div>
                         </div>
+                        <button class="google"><a href="/login/google">Login with Google</a></button>
                     </form>
                 </div>
             </div>
