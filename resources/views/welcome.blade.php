@@ -1,4 +1,4 @@
 @extends('layouts.app')
     @section('content')
-      <div id="example"></div>
+      <div id="usersList"></div>
     @endsection
