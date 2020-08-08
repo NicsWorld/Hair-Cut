@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import UsersList from './UsersList';
+import UsersList from './users-list';
 
 function App() {
     return (

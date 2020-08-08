@@ -65803,7 +65803,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 // require('./components/App');
 
 
-__webpack_require__(/*! ./components/UsersList */ "./resources/js/components/UsersList.js");
+__webpack_require__(/*! ./components/users-list */ "./resources/js/components/users-list.js");
 
 /***/ }),
 
@@ -65852,10 +65852,10 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/js/components/UsersList.js":
-/*!**********************************************!*\
-  !*** ./resources/js/components/UsersList.js ***!
-  \**********************************************/
+/***/ "./resources/js/components/users-list.js":
+/*!***********************************************!*\
+  !*** ./resources/js/components/users-list.js ***!
+  \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -65906,7 +65906,8 @@ var UsersList = /*#__PURE__*/function (_Component) {
     _this = _super.call(this, props);
     _this.state = {
       users: [],
-      loaded: false
+      loaded: false,
+      error: ''
     };
     return _this;
   }
@@ -65918,12 +65919,9 @@ var UsersList = /*#__PURE__*/function (_Component) {
 
       axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('/api/users').then(function (response) {
         _this2.setState({
-          loaded: true
-        });
-
-        _this2.setState({
+          loaded: true,
           users: response.data
-        });
+        }, console.log('hi'));
       });
     }
   }, {
@@ -65945,8 +65943,8 @@ var UsersList = /*#__PURE__*/function (_Component) {
 
 /* harmony default export */ __webpack_exports__["default"] = (UsersList);
 
-if (document.getElementById('usersList')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(UsersList, null), document.getElementById('usersList'));
+if (document.getElementById('users-list')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(UsersList, null), document.getElementById('users-list'));
 }
 
 /***/ }),

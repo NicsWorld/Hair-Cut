@@ -23,8 +23,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-      $users = User::get();
-      return $users->toJson();
-      // return view('welcome')->with(compact('users'));
+        $users = User::get();
+        return $users->toJson();
     }
+
+
 }
