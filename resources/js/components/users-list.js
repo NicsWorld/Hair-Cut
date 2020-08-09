@@ -7,18 +7,17 @@ class UsersList extends Component {
     super(props);
     this.state = {
       users: [],
-      loaded: false
+      loaded: false,
+      error: ''
     };
   }
   componentDidMount() {
-    axios.get('/api/users').then(response => {
-      this.setState({
-        loaded: true
+      axios.get('/api/users').then(response => {
+        this.setState({
+          loaded: true,
+          users: response.data
+        }, console.log('hi'));
       });
-      this.setState({
-        users: response.data
-      });
-    });
   }
 
   render() {
@@ -36,6 +35,6 @@ class UsersList extends Component {
 
 export default UsersList;
 
-if (document.getElementById('usersList')) {
-    ReactDOM.render(<UsersList />, document.getElementById('usersList'));
+if (document.getElementById('users-list')) {
+    ReactDOM.render(<UsersList />, document.getElementById('users-list'));
 }
