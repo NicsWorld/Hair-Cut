@@ -65893,16 +65893,22 @@ var BarberWelcome = /*#__PURE__*/function (_Component) {
     _classCallCheck(this, BarberWelcome);
 
     _this = _super.call(this, props);
-    _this.state = {};
+    _this.state = {
+      choice: 'I want to cut hair'
+    };
     return _this;
   }
 
   _createClass(BarberWelcome, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "ws-1-choice"
-      }, "I want a ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "job"));
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+        className: "stylist ws-1-choice"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+        className: "ws-1-title"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "spacer"
+      }, this.state.choice)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Create a profile and search for jobs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Find a gig"));
     }
   }]);
 
@@ -65967,34 +65973,21 @@ var ClientWelcome = /*#__PURE__*/function (_Component) {
 
     _this = _super.call(this, props);
     _this.state = {
-      choice: ['a hair cut', 'a shave', 'service'],
-      current: 'help'
+      choice: 'I need a stylist'
     };
     return _this;
   }
 
   _createClass(ClientWelcome, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var _this2 = this;
-
-      this.interval = setInterval(function () {
-        _this2.setState({
-          current: _this2.state.choice[Math.floor(Math.random() * _this2.state.choice.length)]
-        });
-      }, 1000);
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      clearInterval(this.interval);
-    }
-  }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "ws-1-choice"
-      }, "I want ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.state.current), " ");
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+        className: "client ws-1-choice"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+        className: "ws-1-title"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "spacer"
+      }, this.state.choice)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Start your free search for care in your area."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Find a pro"));
     }
   }]);
 

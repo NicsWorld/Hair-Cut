@@ -6,28 +6,17 @@ class ClientWelcome extends Component {
     super(props);
 
     this.state = {
-      choice: [
-        'a hair cut',
-        'a shave',
-        'service',
-      ],
-      current: 'help'
+      choice: 'I need a stylist'
     };
   }
 
-  componentDidMount() {
-  this.interval = setInterval(() => {
-    this.setState({current: this.state.choice[Math.floor(Math.random() * this.state.choice.length)]});
-  }, 1000);
-}
-
-componentWillUnmount() {
-  clearInterval(this.interval)
-}
-
   render() {
     return(
-      <div className='ws-1-choice'>I want <div>{this.state.current}</div> </div>
+      <section className="client ws-1-choice">
+        <h2 className='ws-1-title'><span className='spacer'>{this.state.choice}</span></h2>
+        <span>Start your free search for care in your area.</span>
+        <button>Find a pro</button>
+      </section>
     );
   }
 }
