@@ -10,16 +10,6 @@ class ClientWelcome extends Component {
     };
   }
 
-  componentDidMount() {
-  this.interval = setInterval(() => {
-    this.setState({current: this.state.choice[Math.floor(Math.random() * this.state.choice.length)]});
-  }, 1000);
-}
-
-componentWillUnmount() {
-  clearInterval(this.interval)
-}
-
   render() {
     return(
       <section className="client ws-1-choice">

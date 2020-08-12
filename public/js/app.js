@@ -65979,22 +65979,6 @@ var ClientWelcome = /*#__PURE__*/function (_Component) {
   }
 
   _createClass(ClientWelcome, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var _this2 = this;
-
-      this.interval = setInterval(function () {
-        _this2.setState({
-          current: _this2.state.choice[Math.floor(Math.random() * _this2.state.choice.length)]
-        });
-      }, 1000);
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      clearInterval(this.interval);
-    }
-  }, {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
