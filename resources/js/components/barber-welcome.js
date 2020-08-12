@@ -5,12 +5,18 @@ class BarberWelcome extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      choice: 'I want to cut hair'
+    };
   }
 
   render() {
     return(
-      <div className='ws-1-choice'>I want a <div>job</div></div>
+      <section className="stylist ws-1-choice">
+        <h2 className='ws-1-title'><span className='spacer'>{this.state.choice}</span></h2>
+        <span>Create a profile and search for jobs</span>
+        <button>Find a gig</button>
+      </section>
     );
   }
 }
