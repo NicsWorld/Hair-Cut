@@ -1,7 +1,8 @@
 @extends('layouts.app')
     @section('content')
     <section class='welcome-hero'>
-      <div>Cut My Hair Pls</div>
+      <div class='primary-intro'>Find a stylist that fits your needs.</div>
+      <div class='secondary-intro'>To get started, select an option:</div>
     </section>
     <ul class='ws-1'>
       <a href='/login'><li id="client-welcome"></li></a>

@@ -3,6 +3,21 @@
   height: 444px;
   background-position: 50% top;
   background-size: cover;
+  overflow: auto;
+  .primary-intro {
+    font: 45px "Fira Sans", sans-serif;
+    color: white;
+    font-weight: 900;
+    width: 646px;
+    margin-top: 45px;
+    margin-left: 45px;
+  }
+  .secondary-intro {
+    color: white;
+    font: 25px "Fira Sans", sans-serif;
+    margin-top: 135px;
+    margin-left: 45px;
+  }
 }
 
 .ws-1 {
