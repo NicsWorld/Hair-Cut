@@ -5,9 +5,11 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\User;
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
 
 class RegisterController extends Controller
 {
@@ -69,5 +71,21 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+    }
+
+    public function createBarber() {
+      $user = new User();
+
+      return view('barber.register')->with(compact('user'));
+    }
+
+    protected function saveBarber(Request $request) {
+      $user = User::create([
+        'name' => $request->name,
+        'email' => $request->emailAddress,
+        'password' => Hash::make($request->password)
+      ]);
+      Auth::login($user);
+      return redirect('/');
     }
 }

@@ -65908,7 +65908,7 @@ var BarberWelcome = /*#__PURE__*/function (_Component) {
         className: "ws-1-title"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "spacer"
-      }, this.state.choice)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Create a profile and search for jobs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Find a gig"));
+      }, this.state.choice)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Create a profile and search for jobs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Find a Gig"));
     }
   }]);
 
