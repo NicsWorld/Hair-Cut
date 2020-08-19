@@ -20,6 +20,8 @@ Auth::routes();
 
 Route::get('/login/google', 'Auth\LoginController@google');
 Route::get('/callback', 'Auth\LoginController@callback');
+Route::get('/barber/register', 'Auth\RegisterController@createBarber');
+Route::post('/barber/register', 'Auth\RegisterController@saveBarber');
 
 Route::get('/home', function () {
   return view('home');
