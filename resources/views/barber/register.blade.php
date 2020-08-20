@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.register')
 
 @section('content')
 <section class="barber-register-body">
@@ -13,7 +13,7 @@
     @enderror
 
       <label class="form-label" for="email-address">Email</label>
-      <input class="form-input" type="email" name="emailAddress"/>
+      <input class="form-input" type="email" name="emailAddress" required/>
       @error('email-address')
           <span class="invalid-feedback" role="alert">
               <strong>{{ $message }}</strong>
@@ -44,7 +44,6 @@
         </span>
       </span>
       <button class="google"><a href="/login/google"></a></button>
-
   </form>
 
 </section>

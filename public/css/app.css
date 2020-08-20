@@ -11020,8 +11020,9 @@ a.text-dark:focus {
 }
 
 .barber-register-body .barber-submit {
-  background-color: #32CD32;
+  background-color: #00853e    ;
   border: none;
+  color: white;
 }
 
 .barber-register-body .secondary-options {
@@ -11063,3 +11064,20 @@ a.text-dark:focus {
   margin-top: 0.5rem;
 }
 
+.register-body {
+  background-color: #00853e    ;
+}
+
+.register-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 25px;
+  color: #fff;
+  font-weight: 900;
+}
+
+.register-header a {
+  color: white;
+  text-decoration: none;
+}
