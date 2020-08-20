@@ -11020,7 +11020,7 @@ a.text-dark:focus {
 }
 
 .barber-register-body .barber-submit {
-  background-color: #ace1af;
+  background-color: #00853e    ;
   border: none;
   color: white;
 }
@@ -11065,7 +11065,7 @@ a.text-dark:focus {
 }
 
 .register-body {
-  background-color: #ace1af;
+  background-color: #00853e    ;
 }
 
 .register-header {
@@ -11081,4 +11081,3 @@ a.text-dark:focus {
   color: white;
   text-decoration: none;
 }
-
