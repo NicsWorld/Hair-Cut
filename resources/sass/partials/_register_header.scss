@@ -1,0 +1,17 @@
+.register-body {
+  background-color: #00b200;
+}
+
+.register-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 25px;
+  color: #fff;
+  font-weight: 900;
+
+  a {
+    color: white;
+    text-decoration:  none;
+  }
+}
