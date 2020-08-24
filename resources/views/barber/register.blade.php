@@ -1,7 +1,7 @@
 @extends('layouts.register')
 
 @section('content')
-<section class="barber-register-body">
+<section class="signup-wrapper-barber">
   <form method="POST" action="{{ url('/barber/register') }}">
     @csrf
     <label class="form-label" for="name">Name</label>
@@ -12,8 +12,16 @@
         </span>
     @enderror
 
-      <label class="form-label" for="email-address">Email</label>
-      <input class="form-input" type="email" name="emailAddress" required/>
+    <label class="form-label" for="zip_code">Zip Code</label>
+    <input class="form-input" type="text" name="zip_code" required/>
+    @error('zip_code')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
+
+      <label class="form-label" for="email_address">Email</label>
+      <input class="form-input" type="email" name="email_address" required/>
       @error('email-address')
           <span class="invalid-feedback" role="alert">
               <strong>{{ $message }}</strong>
@@ -34,16 +42,6 @@
       <span class="agreement">By clicking Agree & Join, you agree to the LinkedIn User Agreement, Privacy Policy, and Cookie Policy.</span>
 
       <button type="submit" class="barber-submit" value="Accept & Join">Agree & Join</button>
-
-      <span class="secondary-options">
-        <span class="seperator-wrapper">
-          <span class="seperator"></span>
-        </span>
-        <span class="or-wrapper">
-          <span class="or">or</span>
-        </span>
-      </span>
-      <button class="google"><a href="/login/google"></a></button>
   </form>
 
 </section>

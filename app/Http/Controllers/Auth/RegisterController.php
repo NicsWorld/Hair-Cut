@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\User;
+use App\Barber;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
@@ -41,6 +42,7 @@ class RegisterController extends Controller
     public function __construct()
     {
         $this->middleware('guest');
+        $this->middleware('guest:barbers');
     }
 
     /**
@@ -74,18 +76,42 @@ class RegisterController extends Controller
     }
 
     public function createBarber() {
-      $user = new User();
+      $barber = new Barber();
 
-      return view('barber.register')->with(compact('user'));
+      return view('barber.register')->with(compact('barber'));
     }
 
     protected function saveBarber(Request $request) {
-      $user = User::create([
-        'name' => $request->name,
-        'email' => $request->emailAddress,
-        'password' => Hash::make($request->password)
-      ]);
-      Auth::login($user);
-      return redirect('/');
+        $barber = Barber::create([
+          'name' => $request->name,
+          'zip_code' => $request->zip_code,
+          'email' => $request->email_address,
+          'password' => Hash::make($request->password)
+        ]);
+        Auth::guard('barbers')->login($barber);
+        return redirect('/');
+        // $auth = auth()->guard('barbers');
+        // if($this->guard('barbers')->attempt($request->only('email', 'password'))) {
+        //   $this->guard('barbers')->login(Auth::user(), true);
+        //   return redirect('/');
+        // }
+        // Auth::guard('barbers')->login($barber);
+        // auth()->guard('barbers')->login($barber);
+        // if(Auth::guard('barbers')) {
+        //   Auth::login($barber);
+        //
+        // }
+
+
+        // Auth::guard('barbers')->login($barber);
+
+      // $barber = Barber::create([
+      //   'name' => $request->name,
+      //   'zip_code' => $request->zip_code,
+      //   'email' => $request->email_address,
+      //   'password' => Hash::make($request->password)
+      // ]);
+      // Auth::login($barber);
+      // return redirect('/');
     }
 }

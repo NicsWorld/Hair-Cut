@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Laravel\Socialite\Facades\Socialite;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\User;
 class LoginController extends Controller
 {
@@ -37,6 +39,16 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+        $this->middleware('guest:barbers')->except('logout');
+    }
+
+    public function login(Request $request) {
+      if(Auth::guard('barbers')->attempt($request->only('email','password'))){
+        return redirect()->to('/');
+      }
+      if(Auth::guard('web')->attempt($request->only('email','password'))){
+        return redirect()->to('/');
+      }
     }
 
     public function google() {
