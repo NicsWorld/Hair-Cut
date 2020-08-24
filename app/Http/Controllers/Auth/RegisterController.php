@@ -88,30 +88,9 @@ class RegisterController extends Controller
           'email' => $request->email_address,
           'password' => Hash::make($request->password)
         ]);
+
         Auth::guard('barbers')->login($barber);
+        
         return redirect('/');
-        // $auth = auth()->guard('barbers');
-        // if($this->guard('barbers')->attempt($request->only('email', 'password'))) {
-        //   $this->guard('barbers')->login(Auth::user(), true);
-        //   return redirect('/');
-        // }
-        // Auth::guard('barbers')->login($barber);
-        // auth()->guard('barbers')->login($barber);
-        // if(Auth::guard('barbers')) {
-        //   Auth::login($barber);
-        //
-        // }
-
-
-        // Auth::guard('barbers')->login($barber);
-
-      // $barber = Barber::create([
-      //   'name' => $request->name,
-      //   'zip_code' => $request->zip_code,
-      //   'email' => $request->email_address,
-      //   'password' => Hash::make($request->password)
-      // ]);
-      // Auth::login($barber);
-      // return redirect('/');
     }
 }
