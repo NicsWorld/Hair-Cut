@@ -14,8 +14,8 @@ class ClientWelcome extends Component {
     return(
       <section className="client ws-1-choice">
         <h2 className='ws-1-title'><span className='spacer'>{this.state.choice}</span></h2>
-        <span>Start your free search for care in your area.</span>
-        <button>Find a pro</button>
+        <span>Start your free search for care in your area</span>
+        <button>Find A Pro</button>
       </section>
     );
   }

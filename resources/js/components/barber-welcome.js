@@ -15,7 +15,7 @@ class BarberWelcome extends Component {
       <section className="stylist ws-1-choice">
         <h2 className='ws-1-title'><span className='spacer'>{this.state.choice}</span></h2>
         <span>Create a profile and search for jobs</span>
-        <button>Find a Gig</button>
+        <button>Find A Gig</button>
       </section>
     );
   }

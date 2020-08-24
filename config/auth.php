@@ -46,6 +46,11 @@ return [
             'provider' => 'users',
             'hash' => false,
         ],
+
+        'barbers' => [
+          'driver' => 'session',
+          'provider' => 'barbers'
+        ],
     ],
 
     /*
@@ -70,11 +75,10 @@ return [
             'driver' => 'eloquent',
             'model' => App\User::class,
         ],
-
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+        'barbers' => [
+            'driver' => 'eloquent',
+            'model' => App\Barber::class,
+        ],
     ],
 
     /*
@@ -95,6 +99,12 @@ return [
     'passwords' => [
         'users' => [
             'provider' => 'users',
+            'table' => 'password_resets',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+        'barbers' => [
+            'provider' => 'barbers',
             'table' => 'password_resets',
             'expire' => 60,
             'throttle' => 60,
