@@ -75,6 +75,18 @@ class RegisterController extends Controller
         ]);
     }
 
+    public function register(Request $request) {
+      $user = User::create([
+        'name' => $request->name,
+        'email' => $request->email_address,
+        'password' => Hash::make($request->password)
+      ]);
+
+      Auth::guard('web')->login($user);
+
+      return redirect('/');
+    }
+
     public function createBarber() {
       $barber = new Barber();
 
@@ -90,7 +102,7 @@ class RegisterController extends Controller
         ]);
 
         Auth::guard('barbers')->login($barber);
-        
+
         return redirect('/');
     }
 }
