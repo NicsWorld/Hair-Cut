@@ -39,7 +39,7 @@
       <label class="form-label" for="password-confirm">Confirm Password</label>
       <input id="password-confirm" type="password" name="password_confirmation" required autocomplete="new-password">
 
-      <span class="agreement">By clicking Agree & Join, you agree to the LinkedIn User Agreement, Privacy Policy, and Cookie Policy.</span>
+      <span class="agreement">By clicking Agree & Join, you agree to the User Agreement, Privacy Policy, and Cookie Policy.</span>
 
       <button type="submit" class="barber-submit" value="Accept & Join">Agree & Join</button>
   </form>
