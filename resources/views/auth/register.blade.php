@@ -12,8 +12,8 @@
         </span>
     @enderror
 
-      <label class="form-label" for="email_address">Email</label>
-      <input class="form-input" type="email" name="email_address" required/>
+      <label class="form-label" for="email">Email</label>
+      <input class="form-input" type="email" name="email" required/>
       @error('email-address')
           <span class="invalid-feedback" role="alert">
               <strong>{{ $message }}</strong>
@@ -33,7 +33,7 @@
 
       <span class="agreement">By clicking Agree & Join, you agree to the LinkedIn User Agreement, Privacy Policy, and Cookie Policy.</span>
 
-      <button type="submit" class="barber-submit" value="Accept & Join">Agree & Join</button>
+      <button type="submit" class="submit" value="Accept & Join">Agree & Join</button>
   </form>
 
 </section>

@@ -78,7 +78,7 @@ class RegisterController extends Controller
     public function register(Request $request) {
       $user = User::create([
         'name' => $request->name,
-        'email' => $request->email_address,
+        'email' => $request->email,
         'password' => Hash::make($request->password)
       ]);
 
@@ -97,7 +97,7 @@ class RegisterController extends Controller
         $barber = Barber::create([
           'name' => $request->name,
           'zip_code' => $request->zip_code,
-          'email' => $request->email_address,
+          'email' => $request->email,
           'password' => Hash::make($request->password)
         ]);
 
