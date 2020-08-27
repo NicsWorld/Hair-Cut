@@ -1,2 +1,2 @@
- [ ] Deployment Changes
-<!-- checked [x] = Deployment changes; unchecked [ ] = no changes, ignore this section -->
+ - [ ] Cypress tests pass
+
