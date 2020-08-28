@@ -10995,6 +10995,81 @@ a.text-dark:focus {
   padding: 0 25px;
 }
 
+.divider {
+  background: #f5f5f5;
+  padding: 34px 0;
+  text-align: center;
+  color: black;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#quick-links {
+  text-align: center;
+}
+
+.quick-link-section {
+  width: 440px;
+  height: 258px;
+  display: inline-block;
+  margin: 48px 24px;
+  padding: 24px 0 0 24px;
+  text-decoration: none;
+  position: relative;
+}
+
+.quick-link-section button {
+  color: #FFF;
+  background-color: #444;
+  border-radius: 24px;
+  border: none;
+  font-size: 18px;
+  padding: 8px 24px;
+}
+
+.quick-link-section:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.quick-link-small {
+  padding: 6px 0 12px;
+}
+
+.quick-cut {
+  border: 2px solid #00853e;
+  border-radius: 8px;
+  text-align: left;
+  color: black;
+  text-decoration: none;
+}
+
+.cut-hair {
+  background-image: url("/images/1.jpg");
+  background-position: 50% top;
+  background-size: cover;
+  border: 1px solid black;
+  color: white !important;
+  font-weight: 400;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.cut-hair button {
+  background-color: #00853e;
+}
+
+.quick-link-title {
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+.ql-title-left {
+  color: black;
+  text-decoration: none;
+}
+
 .signup-wrapper {
   width: 400px;
   margin: 0 auto;
