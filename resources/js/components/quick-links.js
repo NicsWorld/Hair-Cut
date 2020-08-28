@@ -14,13 +14,13 @@ class QuickLinks extends Component {
     return(
       <section>
       <a href='#' className='quick-link-section quick-cut'>
-        <div className='quick-link-title'>In a hurry? Get a hair cut now</div>
+        <div className='quick-link-title ql-title-left'>In a hurry? Get a hair cut now</div>
         <div className='quick-link-small'>Skip registration and get a hair cut now</div>
         <button>Get A Cut</button>
       </a>
 
       <a  href='#' className='quick-link-section cut-hair'>
-        <div className='quick-link-title'>Compare Stylists to find what fits your needs</div>
+        <div className='quick-link-title'>Compare Stylists</div>
         <div className='quick-link-small'>See Stylists in your area.</div>
         <button>Compare Stylists</button>
       </a>

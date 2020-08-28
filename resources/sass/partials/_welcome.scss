@@ -68,8 +68,8 @@
   padding: 34px 0;
   text-align: center;
   color: black;
-  font: 32px "Fira Sans", sans-serif;
-  font-weight: 500;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 #quick-links {
@@ -82,13 +82,31 @@
   display: inline-block;
   margin: 48px 24px;
   padding: 24px 0 0 24px;
-  text-decoration: none; 
+  text-decoration: none;
+  position: relative;
+  button {
+    color: #FFF;
+    background-color: #444;
+    border-radius: 24px;
+    border: none;
+    font-size: 18px;
+    padding: 8px 24px;
+  }
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
 }
-
+.quick-link-small {
+  padding: 6px 0 12px;
+}
 .quick-cut {
   border: 2px solid #00853e;
   border-radius: 8px;
   text-align: left;
+  color: black;
+  text-decoration: none;
+
 }
 
 .cut-hair {
@@ -100,11 +118,20 @@
   font-weight: 400;
   border-radius: 8px;
   text-align: left;
+  button {
+    background-color: #00853e;
+  }
 }
 
 .quick-link-title {
-  // font-size: 22px;
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: bold;
 }
 .quick-link-small {
   // font-size: 18px;
+}
+.ql-title-left {
+  color: black;
+  text-decoration: none;
 }
