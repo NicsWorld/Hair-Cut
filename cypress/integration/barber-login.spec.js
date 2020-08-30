@@ -1,7 +1,7 @@
 import faker from 'faker'
 
-describe('Login', () => {
-    const email = 'niccypress@nc.com';
+describe('Barber Login', () => {
+    const email = 'testbarber@test.com';
     const password = 'flowers';
     const loginRoute = 'http://127.0.0.1:8000/login';
     const home = 'http://127.0.0.1:8000';

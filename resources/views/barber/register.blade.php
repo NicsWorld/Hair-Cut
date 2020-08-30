@@ -20,8 +20,8 @@
         </span>
     @enderror
 
-      <label class="form-label" for="email_address">Email</label>
-      <input class="form-input" type="email" name="email_address" required/>
+      <label class="form-label" for="email">Email</label>
+      <input class="form-input" type="email" name="email" required/>
       @error('email-address')
           <span class="invalid-feedback" role="alert">
               <strong>{{ $message }}</strong>
