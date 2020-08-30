@@ -13,16 +13,6 @@ describe('Registration', () => {
         cy.url().should('contain', 'register');
     });
 
-    // it('gives validation error', () => {
-    //     cy.visit(registerRoute);
-    //     cy.get('input[name=name]').type(faker.name.findName());
-    //     cy.get('input[name=email]').type(email);
-    //     cy.get('input[name=password]').type('123');
-    //     cy.get('input[name=password_confirmation]').type('123');
-    //     cy.get('button').contains('Agree & Join').click();
-    //     cy.get('body').should('contain', 'The password must be at least 6 characters.');
-    // });
-
     it('successfully registering', () => {
         cy.visit(registerRoute);
         cy.get('input[name=name]').type(name);
