@@ -66070,7 +66070,7 @@ var QuickLinks = /*#__PURE__*/function (_Component) {
       }, "In a hurry? Get a hair cut now"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "quick-link-small"
       }, "Skip registration and get a hair cut now"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Get A Cut")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
+        href: "/stylists",
         className: "quick-link-section cut-hair"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "quick-link-title"
