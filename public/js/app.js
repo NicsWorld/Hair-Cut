@@ -65926,6 +65926,7 @@ var BarbersList = /*#__PURE__*/function (_Component) {
       var _this$state = this.state,
           barbers = _this$state.barbers,
           loaded = _this$state.loaded;
+      c;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, loaded ? barbers.map(function (barber) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
           key: barber.id

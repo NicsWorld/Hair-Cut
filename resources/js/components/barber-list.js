@@ -22,7 +22,7 @@ class BarbersList extends Component {
 
   render() {
     const { barbers, loaded } = this.state;
-
+c
     return (
       <ul>
         {loaded ? barbers.map(barber => (
