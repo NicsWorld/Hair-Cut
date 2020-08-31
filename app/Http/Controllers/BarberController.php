@@ -12,10 +12,16 @@ class BarberController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        //
-    }
+     public function index()
+     {
+       return view('barber.index');
+     }
+
+     public function all()
+     {
+         $barbers = Barber::get();
+         return $barbers->toJson();
+     }
 
     /**
      * Show the form for creating a new resource.

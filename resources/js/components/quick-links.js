@@ -19,7 +19,7 @@ class QuickLinks extends Component {
         <button>Get A Cut</button>
       </a>
 
-      <a  href='#' className='quick-link-section cut-hair'>
+      <a  href='/stylists' className='quick-link-section cut-hair'>
         <div className='quick-link-title'>Compare Stylists</div>
         <div className='quick-link-small'>See Stylists in your area.</div>
         <button>Compare Stylists</button>
