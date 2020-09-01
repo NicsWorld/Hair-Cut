@@ -26,7 +26,7 @@ class BarbersList extends Component {
     return (
       <ul>
         {loaded ? barbers.map(barber => (
-            <li key={barber.id}>{barber.name}</li>
+            <a key={barber.id} href={`/stylists/${barber.id}`}> <li>{barber.name}</li></a>
         )) : 'Loading Barbers....'}
       </ul>
     );

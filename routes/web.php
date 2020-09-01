@@ -22,7 +22,7 @@ Route::get('/login/google', 'Auth\LoginController@google');
 Route::get('/callback', 'Auth\LoginController@callback');
 Route::get('/barber/register', 'Auth\RegisterController@createBarber');
 Route::post('/barber/register', 'Auth\RegisterController@saveBarber');
-
+Route::get('/stylists/{id}', 'BarberController@show');
 Route::get('/stylists', 'BarberController@index');
 
 Route::get('/home', function () {
