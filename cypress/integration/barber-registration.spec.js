@@ -17,7 +17,7 @@ describe('Barber Registration', () => {
     it('successfully registering', () => {
         cy.visit(registerRoute);
         cy.get('input[name=name]').type(name);
-        cy.get('input[name=zip_code]').type(email);
+        cy.get('input[name=zip_code]').type(zipCode);
         cy.get('input[name=email]').type(email);
         cy.get('input[name=password]').type(password);
         cy.get('input[name=password_confirmation]').type(password);

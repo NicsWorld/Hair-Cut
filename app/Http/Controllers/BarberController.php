@@ -50,9 +50,10 @@ class BarberController extends Controller
      * @param  \App\Barber  $barber
      * @return \Illuminate\Http\Response
      */
-    public function show(Barber $barber)
+    public function show($id)
     {
-        //
+        $barber = Barber::where('id', $id)->get();
+        return view('barber.profile')->with(compact('barber'));
     }
 
     /**

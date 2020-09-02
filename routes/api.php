@@ -21,3 +21,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/users', 'HomeController@index');
 
 Route::get('/barbers', 'BarberController@all');
+Route::get('/stylists/{id}', 'BarberController@show');

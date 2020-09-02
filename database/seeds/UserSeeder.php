@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\User;
+use App\Barber;
 class UserSeeder extends Seeder
 {
     /**
@@ -14,5 +15,6 @@ class UserSeeder extends Seeder
     $usersQuantity = 50;
 
     factory(User::class, $usersQuantity)->create();
+    factory(Barber::class, $usersQuantity)->create();
     }
 }
