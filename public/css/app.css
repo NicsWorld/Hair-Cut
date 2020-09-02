@@ -11226,3 +11226,22 @@ a.text-dark:focus {
   margin-top: 0.5rem;
 }
 
+.profile-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 99vh;
+  align-items: center;
+}
+
+.profile-container .profile-picture {
+  background-image: url("/images/lizard.png");
+  height: 125px;
+  width: 125px;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  border: 1px solid #00853e;
+  background-position: center;
+  margin-bottom: 15px;
+}
+
