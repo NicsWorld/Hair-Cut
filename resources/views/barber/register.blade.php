@@ -1,4 +1,4 @@
-@extends('layouts.register')
+@extends('layouts.barber_register')
 
 @section('content')
 <section class="signup-wrapper-barber">

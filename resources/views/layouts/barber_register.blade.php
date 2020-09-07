@@ -21,7 +21,7 @@
 <body class="register-body">
   <header class="register-header">
     <a href="/"><h1>Hair Cut Logo</h1></a>
-    <h4>Get help from a Stylist at home today</h4>
+    <h4>Start connecting with clients today</h4>
   </header>
 <body>
   <main>
