@@ -5,3 +5,4 @@ require('./components/barber-welcome');
 require('./components/quick-links');
 require('./components/barber-list');
 require('./components/barber-profile');
+require('./components/ChatsComponent');
