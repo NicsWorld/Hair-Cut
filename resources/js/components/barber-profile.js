@@ -32,8 +32,6 @@ export default BarbersProfile;
 if (document.getElementById('profile')) {
     const component = document.getElementById("profile");
     const props = Object.assign({}, component.dataset);
-    console.log('-----');
-    console.log(props);
 
     ReactDOM.render(<BarbersProfile {...props} />, component);
 }
