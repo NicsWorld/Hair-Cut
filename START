@@ -1,5 +1,0 @@
-Run Redis server locally
-php artisan websockets:serve
-https://forge.laravel.com/
-
-https://beyondco.de/docs/laravel-websockets/basic-usage/starting
