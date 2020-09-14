@@ -12,5 +12,7 @@
 
     <section class="divider">Get a hair cut from the comfort of your home</section>
     <section id="quick-links"></section>
-
+    @auth
+      <div id="users-list"></div>
+    @endauth
     @endsection

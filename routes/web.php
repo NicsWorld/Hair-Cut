@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Events\WebsocketDemoEvent;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +14,6 @@ use App\Events\WebsocketDemoEvent;
 */
 
 Route::get('/', function () {
-  broadcast(new WebsocketDemoEvent('some data'));
     return view('welcome');
 });
 Auth::routes();
@@ -26,9 +25,6 @@ Route::post('/barber/register', 'Auth\RegisterController@saveBarber');
 Route::get('/stylists/{id}', 'BarberController@show');
 Route::get('/stylists', 'BarberController@index');
 
-Route::get('/chats', 'ChatsController@index');
-Route::get('/messages', 'ChatsController@fetchMessages');
-Route::post('/messages', 'ChatsController@sendMessage');
 Route::get('/home', function () {
   return view('home');
 });
