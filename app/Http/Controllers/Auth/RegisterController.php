@@ -85,7 +85,7 @@ class RegisterController extends Controller
 
       Auth::guard('web')->login($user);
 
-      return redirect('/start');
+      return redirect('/');
     }
 
     public function createBarber() {
