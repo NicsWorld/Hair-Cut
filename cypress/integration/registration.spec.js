@@ -6,6 +6,7 @@ describe('Registration', () => {
     const name = faker.name.findName();
     const registerRoute = 'http://127.0.0.1:8000/register';
     const home = 'http://127.0.0.1:8000';
+    const zip = 12345;
 
     it('goes to the registration page', () => {
         cy.visit(registerRoute);
@@ -16,6 +17,7 @@ describe('Registration', () => {
     it('successfully registering', () => {
         cy.visit(registerRoute);
         cy.get('input[name=name]').type(name);
+        cy.get('input[name=zip_code]').type(zip);
         cy.get('input[name=email]').type(email);
         cy.get('input[name=password]').type(password);
         cy.get('input[name=password_confirmation]').type(password);
