@@ -79,12 +79,13 @@ class RegisterController extends Controller
       $user = User::create([
         'name' => $request->name,
         'email' => $request->email,
+        'zip_code' => $request->zip_code,
         'password' => Hash::make($request->password)
       ]);
 
       Auth::guard('web')->login($user);
 
-      return redirect('/');
+      return redirect('/start');
     }
 
     public function createBarber() {
