@@ -25,6 +25,9 @@ Route::post('/barber/register', 'Auth\RegisterController@saveBarber');
 Route::get('/stylists/{id}', 'BarberController@show');
 Route::get('/stylists', 'BarberController@index');
 
+Route::get('/start', function() {
+  return 'Start!';
+});
 Route::get('/home', function () {
   return view('home');
 });

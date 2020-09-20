@@ -12,6 +12,14 @@
         </span>
     @enderror
 
+    <label class="form-label" for="zip_code">Zip Code</label>
+    <input class="form-input" type="text" name="zip_code" required/>
+    @error('zip_code')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
+
       <label class="form-label" for="email">Email</label>
       <input class="form-input" type="email" name="email" required/>
       @error('email-address')

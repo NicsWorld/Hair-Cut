@@ -12,4 +12,14 @@
   .quick-link-section {
     width: 360px;
   }
+
+  .divider {
+    position: unset;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+  .divider {
+    position: unset;
+  }
 }
