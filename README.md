@@ -1,3 +1,5 @@
+<h1>Development is currently put on hold</h1>
+
 <h1>Cut my hair pls</h1>
 <p>This is an app that is designed to connect hair stylists and clients</p>
 
